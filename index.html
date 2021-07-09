@@ -8,36 +8,46 @@
   </head>
   <body>
     <main>
-    <strong>
-      <h1 style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 40px">Aristotle Onassis</h1>
-    </strong>
-    
-    <h3 style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: larger;">1906 - 1975</h3>
-    <p style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: large;">One of the richest people in the 20th century</p>
-    
     <div>
-      <p style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 11px; ">Aristotle Socrates Onassis (/oʊˈnæsɪs/, US also /-ˈnɑː-/;[1] Greek: Αριστοτέλης Ωνάσης, romanized: Aristotélis Onásis, IPA: [aristoˈtelis oˈnasis]; 20 January 1906 – 15 March 1975),[2] commonly called Ari or Aristo Onassis, was a Greek[3][4] shipping magnate who amassed the world's largest privately-owned shipping fleet and was one of the world's richest men.</p>
-    </div>
-    <picture>
-      <p style="text-align: center;">
-        <img src="./images/camel.jpg" alt="Aristotle Onassis" width="300" height="300">
-      </p>
-    </picture>
-    <p style="text-align: center;font-family: Arial, Helvetica, sans-serif;font-size: 11px;">The most well-known potrait of Onassis</p>
-    <p style="text-align: left;font-family: Arial, Helvetica, sans-serif;font-size: large"> The following list is a time line of Onassis Life</p>
-    <ul style="font-size: small;text-align: left;text">
-            <li><strong>1906</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1907</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1908</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1909</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1910</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1911</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1912</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1913</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1914</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1915</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-            <li><strong>1916</strong> - Lorem ipsum, dolor pariatur amet harum blanditiis? Recusandae laboriosam blanditiis debitis! </li>
-    </ul>
+      <div>
+        <label for="first-name">First name:</label>
+        <input type="text" id="first-name" required pattern="[A-Za-z]*" minlength="3" maxlength="100">
+      </div>
+      <div>
+        <label for="email">E-Mail:</label>
+        <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+      </div>
+        <p>
+          <input type="radio" id="male" name="gender" required value="male">
+          <label for="gender">Male</label>
+          <input type="radio" id="female" name="gender" required value="female">
+          <label for="louie">Female</label>
+        </p>
+      </div>
+      <div>
+        <label for="pet-choice">Choose a pet:</label>
+        <input list="pet-list" id="pet" name="pet-choice" required/>
+        
+        <datalist id="pet-list">
+         <option value="dog">
+         <option value="cat">
+         <option value="pig">
+         <option value="rat">
+         <option value="pokemon">
+        </datalist>
+      </div>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}">
+      </div>
+      <div>
+        <label for="passwordc">Confirm Password:</label>
+        <input type="password" id="passwordc" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{3,}">
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
   </main>
     <footer>
       <div>
