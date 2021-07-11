@@ -11,7 +11,14 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-evenly;
-            align-items: center;
+            align-content: center;
+
+            display: flex;
+   
+            width: 100%;
+            min-height: 100%;
+            margin: 0px auto;
+            text-align:center;  
         }
 
         div{
@@ -30,9 +37,20 @@
             flex-wrap: wrap;
             justify-content: center;
             align-content: center;
+            
             width: 300px;
             height: 400px;
             background-color: antiquewhite;
+
+            min-width: 10em;
+            min-height: 10em;
+            margin: 0.4em;
+            border-radius: 1em;
+        }
+
+        img{
+            width: 300px;
+            height: 200px;
         }
         
        
@@ -41,19 +59,19 @@
 <body>
     <div id="box">
         <div class="card">
-            <img src="images/Aristotle_Onassis_1967.jpg" alt="Aristotle" width="100%" height="50%">
+            <img src="images/Aristotle_Onassis_1967.jpg" alt="Aristotle" >
             <p><strong>Aristotle onassis</strong></p>
             <p>Success is not final, failure is not fatal: it is the courage to continue that counts</p>
         </div>
 
         <div class="card"> 
-            <img src="images/camel.jpg" alt="camel"  width="100%" height="50%">
+            <img src="images/camel.jpg" alt="camel" >
             <p><strong>Camel Picture</strong></p>
             <p>Men occasionally stumble over the truth, but most of   them pick themselves up and hurry off as if nothing had happened</p>
         </div> 
         
         <div class="card">
-            <img src="images/Rick-and-Morty.jpg" alt="Rick and Morty"  width="100%" height="50%">
+            <img src="images/Rick-and-Morty.jpg" alt="Rick and Morty" >
             <p><strong>R&M</strong></p>
             <p>To live is to risk it all; otherwise you're   just an inert chunk of randomly assembled molecules drifting wherever the universe blows you.</p>
         </div>
