@@ -7,21 +7,70 @@
     <title>Using flexbox attributes</title>
 </head>
 <style>
+    body {
+        background-color: lightseagreen;
+    }
+    
+    main {
+        background-color: limegreen;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 60px 0 60px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content-box {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 280px;
+        height: 340px;
+    }
+
+    img {
+        width: 280px;
+        height: 170px;
+    }
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    li {
+        margin: 5px;
+    }
 
 </style>
 <body>
     <main>
+        <nav>
+            <h1>Beautiful frogs</h1>
+            <ul>
+                <li>More</li>
+                <li>About</li>
+                <li>Frogs</li>
+            </ul>
+        </nav>      
         <div class="content">
             <div class="content-box">
-                <img src="" alt="picture of a panda">
+                <img src="/images/frog1.jpg" alt="picture of a frog">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa? Eveniet expedita voluptas, ex dicta quam temporibus deserunt in architecto!</p>
             </div>
             <div class="content-box">
-                <img src="" alt="picture of another panda">
+                <img src="/images/frog2.jpg" alt="picture of another frog">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa? Eveniet expedita voluptas, ex dicta quam temporibus deserunt in architecto!</p>
             </div>
             <div class="content-box">
-                <img src="" alt="picture of a panda, again">
+                <img src="/images/frog3.jpg" alt="picture of a frog, again">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, culpa? Eveniet expedita voluptas, ex dicta quam temporibus deserunt in architecto!</p>
             </div>
         </div>
