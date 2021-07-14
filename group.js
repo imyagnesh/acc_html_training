@@ -25,4 +25,4 @@ const groupByAgeRange = users.reduce((p, c) => {
 
 }, {});
 
-console.log(groupByGender);
+console.log(groupByAgeRange);
